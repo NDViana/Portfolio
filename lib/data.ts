@@ -63,4 +63,5 @@ export const skillsData = [
     "Node.js",
     "Git",
     "Tailwind",
+    "Flask",
 ] as const;
