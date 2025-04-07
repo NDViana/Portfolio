@@ -10,10 +10,11 @@ import {FaGithubSquare} from "react-icons/fa";
 import {useActiveSectionContext} from "@/context/active-section-context";
 import {useInView} from "react-intersection-observer";
 
+
 export default  function Intro()
 {
     const{ref, inView} = useInView();
-    const {setActive} = useActiveSectionContext();
+    const {setActive, setTimeOfLastClick} = useActiveSectionContext();
 
     useEffect(()=>
     {
@@ -46,8 +47,14 @@ export default  function Intro()
                         initial={{opacity: 0, y: 100}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.2, type: "spring", stiffness: 125, delay: 0.1}}>
-                <Link href="#contact"
-                      className={"group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outlined:none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"}>
+                <Link
+                    href="#contact"
+                    className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                    onClick={() => {
+                        setActive("Contact");
+                        setTimeOfLastClick(Date.now());
+                    }}
+                >
                     Contact me
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>

@@ -3,8 +3,9 @@ import "./globals.css"
 // import {Inter} from "next/font/google";
 import Header from "@/components/header";
 //const inter = Inter({subsets:["latin"]});
-
+import Footer from "@/components/footer";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import {Toaster} from "react-hot-toast";
 export const metadata = {
   title: "Nathaniel | Personal Portfolio",
   description: 'Nathaniel is a college undergraduate studying Computer Science at RPI',
@@ -24,6 +25,8 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header/>
           {children}
+          <Footer/>
+          <Toaster position="bottom-right" />
         </ActiveSectionContextProvider>
       </body>
     </html>
