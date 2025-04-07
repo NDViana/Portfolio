@@ -33,7 +33,7 @@ export const experience = [
     {
         year: "2020",
         title: "Intern",
-        location: "NYC",
+        location: "NYC Parks Dept",
         description: "Collected, analyzed, and logged environmental and maintenance data for urban parks and recreational areas, ensuring accuracy and consistency\n" +
             " across records.",
         icon: Briefcase,
