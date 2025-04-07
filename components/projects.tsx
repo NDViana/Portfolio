@@ -57,9 +57,8 @@ function Project({title, description, tags, imageUrl}: ProjectProps) {
                 </ul>
             </div>
 
-            {/* Mobile & Desktop image with responsive classes */}
             <Image
-                className="w-full h-64 object-cover sm:object-contain mt-4 sm:mt-0
+                className="w-full h-64 mt-4 sm:mt-0
         sm:absolute sm:bottom-0 sm:-right-40 sm:w-[28.25rem] sm:h-[18rem]
         sm:rounded-t-lg sm:shadow-2xl
         transition

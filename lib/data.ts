@@ -1,6 +1,7 @@
-
+import { Briefcase} from "lucide-react";
 import PSoftToolsFrontEnd from "@/public/PSoftToolsFrontend.png";
-import StockTrackerBackend from "@/public/StockPageBackEnd.png"
+import StockTrackerBackend from "@/public/StockPageBackEnd.png";
+
 export const links = [
     {
         name: "Home",
@@ -28,6 +29,16 @@ export const links = [
     },
 ]
 
+export const experience = [
+    {
+        year: "2020",
+        title: "Intern",
+        location: "NYC",
+        description: "Collected, analyzed, and logged environmental and maintenance data for urban parks and recreational areas, ensuring accuracy and consistency\n" +
+            " across records.",
+        icon: Briefcase,
+    },
+]
 
 export const projectsData = [
     {
