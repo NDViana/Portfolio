@@ -44,3 +44,9 @@ npm run dev
 ## Credits
 
 Special thanks to [ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM&t=22513s) for the excellent tutorial on building a developer portfolio with Next.js, Tailwind CSS, and Framer Motion.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
