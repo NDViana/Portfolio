@@ -8,17 +8,18 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/section-heading";
 
 export default function Skills() {
-    const { ref, inView } = useInView();
-    const { setActive } = useActiveSectionContext();
-
+    const{ref, inView} = useInView();
+    const { setActive, timeOfLastClick } = useActiveSectionContext();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [reverse, setReverse] = useState(false);
 
     useEffect(() => {
-        if (inView) {
+        if (inView && Date.now() - timeOfLastClick > 1000) {
             setActive("Skills");
         }
-    }, [inView, setActive]);
+    }, [inView, setActive, timeOfLastClick]);
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {

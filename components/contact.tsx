@@ -11,15 +11,14 @@ import {useActiveSectionContext} from "@/context/active-section-context";
 
 export default function Contact() {
     const{ref, inView} = useInView();
-    const {setActive} = useActiveSectionContext();
+    const { setActive, timeOfLastClick } = useActiveSectionContext();
 
-    useEffect(()=>
-    {
-        if (inView) {
-            console.log("InView", inView);
+    useEffect(() => {
+        if (inView && Date.now() - timeOfLastClick > 1000) {
             setActive("Contact");
         }
-    }, [ inView, setActive]);
+    }, [inView, setActive, timeOfLastClick]);
+
     return (
         <motion.section
             id="contact"

@@ -9,15 +9,13 @@ import Image from "next/image";
 
 export default function Projects() {
     const{ref, inView} = useInView();
-    const {setActive} = useActiveSectionContext();
+    const { setActive, timeOfLastClick } = useActiveSectionContext();
 
-    useEffect(()=>
-    {
-        if (inView) {
-            console.log("InView", inView);
+    useEffect(() => {
+        if (inView && Date.now() - timeOfLastClick > 1000) {
             setActive("Projects");
         }
-    }, [ inView, setActive]);
+    }, [inView, setActive, timeOfLastClick]);
 
     return (
         <section className="sm:mb-40 text-center" ref= {ref} id="projects">
