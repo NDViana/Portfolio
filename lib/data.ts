@@ -49,6 +49,8 @@ export const projectsData = [
 
         tags: ["React", "TypeScript", "Python", "Git", "Node.js"],
         imageUrl: PSoftToolsFrontEnd,
+        projectUrl: "https://github.com/tolmiery/PSoft-Tools"
+
     },
     {
         title: "Stock Tracker",
@@ -57,6 +59,8 @@ export const projectsData = [
             "and performance insights. all presented through a clean and intuitive interface.",
         tags: ["React", "TypeScript", "Flask", "CSS"],
         imageUrl: StockTrackerBackend,
+        projectUrl: "https://github.com/NDViana/Stocktracker/tree/main"
+
     },
 
 
