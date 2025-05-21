@@ -39,13 +39,17 @@ export default function Contact() {
         >
             <SectionHeading>Contact me</SectionHeading>
 
-            <p className="text-gray-700 -mt-6 dark:text-white/80">
+            <p className="text-gray-700 -mt-4 dark:text-black/80 text-sm sm:text-base">
                 Please contact me directly at{" "}
-                    <a className="underline" href="mailto:nathanielviana@gmail.com">
+                <a
+                    className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors duration-200"
+                    href="mailto:nathanielviana@gmail.com"
+                >
                     nathanielviana@gmail.com
                 </a>{" "}
                 or through this form.
             </p>
+
 
             <form
                 className="mt-10 flex flex-col dark:text-black"
