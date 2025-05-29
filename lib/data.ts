@@ -64,7 +64,7 @@ export const projectsData = [
     },
     {
         title: "Barbell Benders",
-        description: "A simple API designed to simulate the properties of a workout app, allowing for SCRUM deployment of workouts.",
+        description: "A full workout tracker backend with JWT authentication, PostgreSQL integration, and RESTful APIs for managing user accounts and workouts. Deployed with Docker and documented via Swagger UI.",
         tags: ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Swagger", "Maven"],
         imageUrl: BarbellBenders,
         projectUrl: "https://github.com/NDViana/Barbell-Benders-Backend"
