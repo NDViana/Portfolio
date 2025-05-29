@@ -1,7 +1,7 @@
 import { Briefcase} from "lucide-react";
 import PSoftToolsFrontEnd from "@/public/PSoftToolsFrontend.png";
 import StockTrackerBackend from "@/public/StockPageBackEnd.png";
-
+import BarbellBenders from "@/public/BarbellBenders.png";
 export const links = [
     {
         name: "Home",
@@ -62,6 +62,13 @@ export const projectsData = [
         projectUrl: "https://github.com/NDViana/Stocktracker/tree/main"
 
     },
+    {
+        title: "Barbell Benders",
+        description: "A simple API designed to simulate the properties of a workout app, allowing for SCRUM deployment of workouts.",
+        tags: ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Swagger", "Maven"],
+        imageUrl: BarbellBenders,
+        projectUrl: "https://github.com/NDViana/Barbell-Benders-Backend"
+    }
 
 
 ]
@@ -79,4 +86,9 @@ export const skillsData = [
     "Git",
     "Tailwind",
     "Flask",
+    "PostgreSQL",
+    "Spring Boot",
+    "Spring Data JPA",
+    "Swagger",
+    "Maven",
 ] as const;

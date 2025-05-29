@@ -36,10 +36,10 @@ type ProjectProps = (typeof projectsData)[0];
 
 function Project({title, description, tags, imageUrl, projectUrl}: ProjectProps) {
     return(
-        <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-            <section className="group bg-gray-100 max-w-[42rem] rounded-lg border
-        border-black/5 overflow-hidden relative sm:pr-8 sm:h-[25rem]
-        mb-3 sm:mb-8 last:mb-0 hover:bg-gray-200 transition" >
+        <section className="group bg-gray-100 max-w-[42rem] rounded-lg border
+    border-black/5 overflow-hidden relative sm:pr-8 sm:h-[25rem]
+    mb-3 sm:mb-8 last:mb-0 hover:bg-gray-200 transition" >
+            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
                 <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10
           sm:max-w-[50%] flex flex-col h-full">
                     <h3 className="text-2xl font-semibold">{title}</h3>
@@ -55,20 +55,20 @@ function Project({title, description, tags, imageUrl, projectUrl}: ProjectProps)
                         ))}
                     </ul>
                 </div>
-                    <Image
-                        className="w-full h-64 mt-4 sm:mt-0
-                sm:absolute sm:bottom-0 sm:-right-40 sm:w-[28.25rem] sm:h-[18rem]
-                sm:rounded-t-lg sm:shadow-2xl
-                transition
-                sm:group-hover:-translate-x-3
-                sm:group-hover:translate-y-3
-                sm:group-hover:-rotate-2"
-                        src={imageUrl}
-                        alt="Projects I've worked on"
-                        quality={95}
-                    />
+                <Image
+                    className="w-full h-64 mt-4 sm:mt-0
+            sm:absolute sm:bottom-0 sm:-right-40 sm:w-[28.25rem] sm:h-[18rem]
+            sm:rounded-t-lg sm:shadow-2xl
+            transition
+            sm:group-hover:-translate-x-3
+            sm:group-hover:translate-y-3
+            sm:group-hover:-rotate-2"
+                    src={imageUrl}
+                    alt="Projects I've worked on"
+                    quality={95}
+                />
+            </a>
+        </section>
 
-            </section>
-        </a>
     );
 }
