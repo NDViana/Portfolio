@@ -57,7 +57,7 @@ export const projectsData = [
         title: "RL Racetrack",
         description:
             "This project implements a Q-learning agent that learns to drive a car around a racetrack. The agent learns to navigate from a starting line to a finish line while avoiding going off-track. The environment is built using a custom Gymnasium-compatible interface with Pygame visualization.",
-        tags: ["Python", "Q-learning", "Reinforcement Learning", "Pygame"],
+        tags: ["Python", "Q-learning", "Reinforcement Learning"],
         imageUrl: racetrack_padded_static,
         imageUrlHover: racetrack_padded_gif,
         projectUrl: "https://github.com/NDViana/RLRacetrack" // Update with your actual repo URL
@@ -91,5 +91,4 @@ export const skillsData = [
     "Swagger",
     "Q-learning",
     "Reinforcement Learning",
-    "Pygame",
 ] as const;
