@@ -1,6 +1,7 @@
 import { Briefcase} from "lucide-react";
 import PSoftToolsFrontEnd from "@/public/PSoftToolsFrontend.png";
-import racetrack_padded from "@/public/racetrack_padded_final.gif";
+import racetrack_padded_gif from "@/public/racetrack_padded_final.gif";
+import racetrack_padded_static from "@/public/racetrack_padded_static.png";
 import BarbellBenders from "@/public/BarbellBenders.png";
 export const links = [
     {
@@ -57,7 +58,8 @@ export const projectsData = [
         description:
             "This project implements a Q-learning agent that learns to drive a car around a racetrack. The agent learns to navigate from a starting line to a finish line while avoiding going off-track. The environment is built using a custom Gymnasium-compatible interface with Pygame visualization.",
         tags: ["Python", "Q-learning", "Reinforcement Learning", "Pygame"],
-        imageUrl: racetrack_padded, // Replace this with a racetrack-related image import when you have one
+        imageUrl: racetrack_padded_static,
+        imageUrlHover: racetrack_padded_gif,
         projectUrl: "https://github.com/NDViana/RLRacetrack" // Update with your actual repo URL
     },
     {
