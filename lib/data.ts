@@ -1,6 +1,6 @@
 import { Briefcase} from "lucide-react";
 import PSoftToolsFrontEnd from "@/public/PSoftToolsFrontend.png";
-import StockTrackerBackend from "@/public/StockPageBackEnd.png";
+import racetrack_padded from "@/public/racetrack_padded_final.gif";
 import BarbellBenders from "@/public/BarbellBenders.png";
 export const links = [
     {
@@ -53,14 +53,12 @@ export const projectsData = [
 
     },
     {
-        title: "Stock Tracker",
+        title: "RL Racetrack",
         description:
-            "A sleek web application that simplifies stock analysis by providing real-time trends, historical data, " +
-            "and performance insights. all presented through a clean and intuitive interface.",
-        tags: ["React", "TypeScript", "Flask", "CSS"],
-        imageUrl: StockTrackerBackend,
-        projectUrl: "https://github.com/NDViana/Stocktracker/tree/main"
-
+            "This project implements a Q-learning agent that learns to drive a car around a racetrack. The agent learns to navigate from a starting line to a finish line while avoiding going off-track. The environment is built using a custom Gymnasium-compatible interface with Pygame visualization.",
+        tags: ["Python", "Q-learning", "Reinforcement Learning", "Pygame"],
+        imageUrl: racetrack_padded, // Replace this with a racetrack-related image import when you have one
+        projectUrl: "https://github.com/NDViana/RLRacetrack" // Update with your actual repo URL
     },
     {
         title: "Barbell Benders",
@@ -88,7 +86,8 @@ export const skillsData = [
     "Flask",
     "PostgreSQL",
     "Spring Boot",
-    "Spring Data JPA",
     "Swagger",
-    "Maven",
+    "Q-learning",
+    "Reinforcement Learning",
+    "Pygame",
 ] as const;

@@ -29,7 +29,7 @@ export default function About() {
             <SectionHeading>About Me</SectionHeading>
 
             <p className="mb-4">
-                After graduating from Lynbrook High School in Lynbrook, NY, I decided to turn my passion for programming into a career.
+                After graduating from Lynbrook High School, I decided to pursue my love for programming.
                 I enrolled at <span className="font-semibold">Rensselaer Polytechnic Institute (RPI)</span> to deepen my knowledge and build a strong foundation in computer science.
                 So far, my journey has been both challenging and rewarding, as I’ve explored key topics like <span className="font-semibold">data structures, algorithms, and software engineering principles</span>.
             </p>
