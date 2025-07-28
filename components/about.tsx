@@ -27,26 +27,19 @@ export default function About() {
             transition={{delay:0.175}}>
 
             <SectionHeading>About Me</SectionHeading>
-
+            
             <p className="mb-4">
-                After graduating from Lynbrook High School, I decided to pursue my love for programming.
-                I enrolled at <span className="font-semibold">Rensselaer Polytechnic Institute (RPI)</span> to deepen my knowledge and build a strong foundation in computer science.
-                So far, my journey has been both challenging and rewarding, as I’ve explored key topics like <span className="font-semibold">data structures, algorithms, and software engineering principles</span>.
+                I&#39;m a CS student at RPI with a focus on backend development and AI/ML. I enjoy building scalable APIs, messing around with ML models, and connecting classroom theory to real world examples.
             </p>
 
             <p className="mb-4">
-                My coursework has given me hands-on experience in <span className="font-semibold">project management and software documentation</span>, particularly through
-                my work on PSoft Tools, an open-source project designed to help students grasp fundamental software engineering concepts.
-                Beyond academics, I’ve developed a passion for <span className="font-semibold">mentorship and education</span>. As the Vice President of
-                <span className="font-semibold"> Coding&&Community</span>, I help organize events and teach computer science fundamentals to students, working toward closing
-                the gap in CS education opportunities.
+                Outside of tech, I enjoy lifting and playing sports like basketball and soccer. That passion led me to develop a workout tracking app. This project that blends my love for fitness and coding by allowing me monitor and progress in my training.
             </p>
 
             <p className="mb-4">
-                Outside of coding, I enjoy staying active. Whether it&#39;s <span className="font-semibold">lifting or playing sports like basketball and soccer</span>,
-                I’m always looking for ways to push myself physically and mentally. Recently, I’ve been working on a <span className="font-semibold">weightlifting app</span> to
-                monitor my progress and improve my workouts. When I’m not at the gym or working on projects, I love watching shows such as Dexter and playing games like Super Mario Maker 2.
+                What keeps me hooked on coding is the problem solving aspect. It&#39;s not always easy and debugging can be frustrating and sleep depriving. But the satisfaction of cracking a tough problem makes it all worth it. That moment of clarity is what keeps me coming back.
             </p>
+
         </motion.section>
     );
 }

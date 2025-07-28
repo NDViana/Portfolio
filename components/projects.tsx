@@ -6,6 +6,7 @@ import React, {useEffect} from "react";
 import SectionHeading from "@/components/section-heading";
 import {projectsData} from "@/lib/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Projects() {
     const{ref, inView} = useInView();
@@ -18,7 +19,10 @@ export default function Projects() {
     }, [inView, setActive, timeOfLastClick]);
 
     return (
-        <section className="sm:mb-40 text-center" ref= {ref} id="projects">
+        <motion.section className="sm:mb-40 text-center" ref= {ref} id="projects"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}>
             <SectionHeading> My Projects </SectionHeading>
             <div>
                 {
@@ -29,7 +33,7 @@ export default function Projects() {
                     ))
                 }
             </div>
-        </section>
+        </motion.section>
     );
 }
 type ProjectProps = (typeof projectsData)[0];

@@ -34,12 +34,13 @@ export default  function Intro()
             <motion.h1 initial={{opacity: 0, y: 100}}
                       animate={{opacity: 1, y: 0}}
                       className="mb-10 font-medium !leading-[1.5] mt-4 px-4 text-2xl sm:text-4xl">
-                Hello my name is
+                Hi my name is
                 <span className="font-bold">  Nathaniel.</span> I&apos;m a{" "}
-                <span className="font-bold"> student at RPI</span>. Since middle school I have had a passion for
-                programming. I enjoy building{" "}
-                <span className="italic"> sites & apps.</span> In my studies my focus is{" "}
-                <span className="underline">AI & ML</span>.
+                <span className="font-bold">CS student at RPI</span>. I specialize in{" "}
+                <span className="font-bold">Backend Development</span> and{" "}
+                <span className="font-bold">AI/ML</span>. I&apos;m passionate about building projects and gaining experience in the tech industry.
+                <br/>
+
             </motion.h1>
             <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
                         initial={{opacity: 0, y: 100}}

@@ -5,6 +5,7 @@ import SectionHeading from "@/components/section-heading";
 import {useInView} from "react-intersection-observer";
 import {useActiveSectionContext} from "@/context/active-section-context";
 import {useEffect} from "react";
+import { motion } from "framer-motion";
 
 export default function Experience() {
     const{ref, inView} = useInView();
@@ -16,7 +17,11 @@ export default function Experience() {
         }
     }, [inView, setActive, timeOfLastClick]);
     return (
-        <section ref = {ref} className="relative py-20" id="experience">
+        <motion.section ref = {ref} className="relative py-20" id="experience"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}>
+
             <SectionHeading >
                 <div className="text-center">My experience</div>
             </SectionHeading>
@@ -72,6 +77,6 @@ export default function Experience() {
 
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
