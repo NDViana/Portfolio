@@ -48,7 +48,7 @@ export const projectsData = [
             "An open-source educational platform designed to help students grasp Principles of Software concepts. " +
             "It features automated problem generation, solution verification, and visualizations of common design patterns.",
 
-        tags: ["React", "TypeScript", "Python", "Git", "Node.js"],
+        tags: ["React", "TypeScript", "Python", "Git"],
         imageUrl: PSoftToolsFrontEnd,
         projectUrl: "https://github.com/tolmiery/PSoft-Tools"
 
@@ -77,12 +77,9 @@ export const skillsData = [
     "C++",
     "Java",
     "Python",
-    "CSS",
     "JavaScript",
     "TypeScript",
     "React",
-    "Next.js",
-    "Node.js",
     "Git",
     "Tailwind",
     "Flask",
