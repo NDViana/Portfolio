@@ -32,12 +32,11 @@ export const links = [
 
 export const experience = [
     {
-        year: "2020",
-        title: "Intern",
-        location: "NYC Parks Dept",
-        description: "Collected, analyzed, and logged environmental and maintenance data for urban parks and recreational areas, ensuring accuracy and consistency\n" +
-            " across records.",
-        icon: Briefcase,
+        year: "2026",
+        title: "Factory Systems Setup (FSS) Intern",
+        location: "GlobalFoundries",
+        description: "Develop internal Python automation tools to accelerate factory systems verification, streamline cross-functional workflows, and reduce process cycle times.",
+        icon: Briefcase
     },
 ]
 
@@ -74,18 +73,10 @@ export const projectsData = [
 ]
 
 export const skillsData = [
-    "C++",
     "Java",
     "Python",
-    "JavaScript",
-    "TypeScript",
-    "React",
     "Git",
-    "Tailwind",
-    "Flask",
     "PostgreSQL",
     "Spring Boot",
-    "Swagger",
-    "Q-learning",
     "Reinforcement Learning",
 ] as const;
